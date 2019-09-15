@@ -29,7 +29,7 @@ Run Jar
 ------------
 ```
 $ cd <path.to.AppChallenge-1.0-SNAPSHOT-jar-with-dependencies.jar>
-$ java -jar target/AppChallenge-1.0-SNAPSHOT-jar-with-dependencies.jar
+$ java -jar AppChallenge-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 
 Run Tests
