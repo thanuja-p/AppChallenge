@@ -23,7 +23,7 @@ Build Jar
 $ cd <path.to.AppChallange>
 $ mvn clean compile assembly:single
 ```
-Jar will be file created in <path.to.AppChallange>/target/AppChallenge-1.0-SNAPSHOT-jar-with-dependencies.jar
+Jar file will be created in <path.to.AppChallange>/target/AppChallenge-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 Run Jar
 ------------
