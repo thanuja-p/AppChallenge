@@ -3,6 +3,7 @@ package com.challenge.app.menu;
 import com.challenge.app.dto.*;
 import com.challenge.app.exceptions.SearchException;
 import com.challenge.app.searchers.SearchFactory;
+import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,6 +22,8 @@ public class SearchMenu {
     private static SearchMenu searchMenu = new SearchMenu();
     private SearchPrinter printer;
     private SearchFactory searchFactory;
+
+    final static Logger logger = Logger.getLogger(SearchMenu.class);
 
     private SearchMenu() {
         try {
@@ -96,6 +99,7 @@ public class SearchMenu {
             printSearchResults(searchType, searchTerm, searchValue);
         } catch (InputMismatchException | SearchException e) {
             System.out.println("Invalid Option!");
+            logger.error("Invalid Option!", e);
             printSearchMenu();
         }
     }
