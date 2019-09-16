@@ -16,7 +16,7 @@ Note
 ------------
 * Please make sure to place users.json, tickets.json and organization.json under AppChallange/JsonStore.
 * Please do not change json files name.
-* Open log4j.properties file to change the log file path as below.
+* Open AppChallange/log4j.properties file to change the log file path as below.
 ```
 log4j.appender.file.File=<path.to.AppChallenge.log.file>/AppChallenge.log
 ```
